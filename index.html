@@ -12,22 +12,42 @@
 </head>
 
 <body>
+
+
     <div id="app">
-        {{ message }}
+        <song-tile></song-tile>
     </div>
 
 
-    <!--<script src="index.js" />-->
+    <template id="song-tile-template">
+        <div>
+            <h1>song tile component</h1>
+        <h2> hooo {{counter}} </h2> 
+        </div>
+    </template>
 
     <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!'
-            }
-        })
-    </script>
+        //create global song-tile component
 
+        Vue.component('song-tile', {
+            template: '#song-tile-template',
+            data: function() {
+                return {
+                    counter: 5
+                }
+            },
+            methods: {
+                increment: function() {
+                    this.counter += 1
+                    this.$emit('increment')
+                }
+            }
+        });
+        // start app
+        var rootComponent = new Vue({
+            el: '#app'
+        });
+    </script>
 </body>
 
 </html>
