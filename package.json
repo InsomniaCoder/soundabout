@@ -1,0 +1,27 @@
+{
+    "name": "soundabout",
+    "version": "1.0.0",
+    "description": "web app for managing favorite songs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/InsomniaCoder/soundabout.git"
+    },
+    "author": "TanatLoke",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/InsomniaCoder/soundabout/issues"
+    },
+    "homepage": "https://github.com/InsomniaCoder/soundabout#readme",
+    "dependencies": {
+        "bulma": "^0.4.0",
+        "vue": "^2.2.6"
+    },
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+    }
+}
